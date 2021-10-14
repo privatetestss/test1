@@ -20,10 +20,9 @@ app.set('view engine', 'ejs');
 app.use(express.static(__dirname + '/static'));
 app.set('trust proxy', true);
 app.use('/pdf', express.static(__dirname + '/static/media/CV 2020 Tabuti nac.pdf'));
-app.listen(8080, function () {
-    console.log('Example app listening on port 8080!');
+app.listen(process.env.PORT || 3000, function () {
+    console.log("SERVER STARTED PORT: 3000");
 });
-
 
 // ALL API REQUESTS GO HERE, DO NOT MAKE views/pages/api/
 // app.get('/api/*', function(req, res) {
@@ -42,6 +41,9 @@ app.get(/^(?!\/api\/)/, (req, res) => {
     }
     res.render(pathname, purl.query);
 });
+
+
+
 
 
 
