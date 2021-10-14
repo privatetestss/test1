@@ -4,6 +4,8 @@
   "description": "personal website",
   "main": "app.js",
   "scripts": {
+    "start": "node app.js",
+    "build" : "node app.js",
     "dev": "nodemon app.js"
   },
   "author": "Joshua Tabuti ",
@@ -18,4 +20,3 @@
     "request": "^2.85.0",
     "request-promise": "^4.2.2"
   }
-}
