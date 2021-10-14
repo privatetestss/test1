@@ -1,0 +1,21 @@
+{
+  "name": "john_tabuti_website",
+  "version": "1.0.1",
+  "description": "personal website",
+  "main": "app.js",
+  "scripts": {
+    "dev": "nodemon app.js"
+  },
+  "author": "Joshua Tabuti ",
+  "license": "MIT",
+  "dependencies": {
+    "ejs": "^2.5.9",
+    "express": "^4.16.3",
+    "jsdom": "^11.10.0",
+    "nodemailer": "^6.6.5",
+    "nodemon": "^2.0.13",
+    "pdfkit": "^0.12.3",
+    "request": "^2.85.0",
+    "request-promise": "^4.2.2"
+  }
+}
